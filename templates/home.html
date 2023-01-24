@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>Home Page</h1>
+
+    {% for snack in snacks %}
+        <h2>Name: {{ snack.title }}</h2>
+        <p>Description: {{ snack.description }}</p>
+    {% endfor %}
+
+{% endblock content %}
